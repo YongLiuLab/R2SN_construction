@@ -3,7 +3,7 @@ R2SNs provide a novel, reliable and biologically plausible method to understand 
 ## Acknowledgement
 Author: ***Fan Yang (2669742207@qq.com),Kun Zhao (kunzhao@buaa.edu.cn)***
 
-This package is thank for ATNS team.
+The registeration is based on ANTs toolkit.
 ## Source
 If you used R2SN_code, please refer this orignal paper.
 [Original Paper](https://direct.mit.edu/netn/article/5/3/783/101835/Regional-radiomics-similarity-networks-R2SNs-in)

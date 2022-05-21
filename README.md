@@ -2,18 +2,20 @@
 R2SNs provide a novel, reliable and biologically plausible method to understand human morphological covariance based on sMRI.
 ## Acknowledgement
 Author: ***Fan Yang (2669742207@qq.com),Kun Zhao (kunzhao@buaa.edu.cn)***
+This package is thank for ATNS team.
 ## Source
 If you used R2SN_code, please refer this orignal paper.
 [Original Paper](https://direct.mit.edu/netn/article/5/3/783/101835/Regional-radiomics-similarity-networks-R2SNs-in)
 
 ## Installation
 Two versions can be found in this websicte, and one is suitable for Windows and the other is for ubuntu. Detailed see R2SN_win and R2SN_ubuntu.
-If you were used it based on windows system, you should download the [ANTs windows](https://github.com/ANTsX/ANTs/releases). Otherwise, the [ANTspy](https://github.com/ANTsX/ANTsPy) code is needed.
+If you were used it based on windows system, you should download the [ANTs windows](https://github.com/ANTsX/ANTs/releases). Otherwise, the [ANTspy](https://github.com/ANTsX/ANTsPy) code is needed. The author suggest the ubuntu revison is better than windows.
 
 There are two ways to install the R2SN_code.
 
-###### First way: Download this codeing and cd the .../R2SN_code/, then print:"pip install ."  
-###### Second way: pip install pip install R2SN==1.0.4
+***First way: Download this codeing and cd the .../R2SN_code/, then print:"pip install ."*** 
+
+***Second way: pip install R2SN==1.0.4***
 
 ## Example
 from R2SN import feature_extraction  

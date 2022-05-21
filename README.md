@@ -2,6 +2,7 @@
 R2SNs provide a novel, reliable and biologically plausible method to understand human morphological covariance based on sMRI.
 ## Acknowledgement
 Author: ***Fan Yang (2669742207@qq.com),Kun Zhao (kunzhao@buaa.edu.cn)***
+
 This package is thank for ATNS team.
 ## Source
 If you used R2SN_code, please refer this orignal paper.

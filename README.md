@@ -10,7 +10,7 @@ If you used R2SN_code, please refer this orignal paper.
 
 ## Installation
 Two versions can be found in this websicte, and one is suitable for Windows and the other is for ubuntu. Detailed see R2SN_win and R2SN_ubuntu.
-If you were used it based on windows system, you should download the [ANTs windows](https://github.com/ANTsX/ANTs/releases). Otherwise, the [ANTspy](https://github.com/ANTsX/ANTsPy) code is needed. The author suggest the ubuntu revison is better than windows.
+If you were used it based on windows system, you should download the [ANTs windows](https://github.com/ANTsX/ANTs/releases). Otherwise, the [ANTspy](https://github.com/ANTsX/ANTsPy) code is needed if you choose ***"system=linux"***. The author suggest the ubuntu revison is better than windows.
 
 There are two ways to install the R2SN_code.
 

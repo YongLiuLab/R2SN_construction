@@ -4,3 +4,4 @@ scipy==1.6.2
 SimpleITK==2.1.1.2
 numpy>=1.21.5
 pandas==1.2.3
+sklearn

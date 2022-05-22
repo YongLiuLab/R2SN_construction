@@ -31,4 +31,7 @@ if __name__ == '__main__':
                                             system = 'Windows', #Linux  
                                             n_jobs = 1)  
 
+## Note
+You may meet some errors in using this package, like...
 
+***1.*** 

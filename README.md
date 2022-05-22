@@ -3,6 +3,8 @@ R2SNs provide a novel, reliable and biologically plausible method to understand 
 ## Acknowledgement
 Author: ***Fan Yang (2669742207@qq.com),Kun Zhao (kunzhao@buaa.edu.cn)***
 
+Any questions, pls do not hesitate to contact kunzhao@buaa.edu.cn
+
 The registeration section is based on ANTs toolkit.
 ## Source
 If you used R2SN_code, please refer this orignal paper.

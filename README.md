@@ -15,8 +15,7 @@ This package can support two systems, you can choose the system followed your co
 
 There are two ways to install the R2SN_code.
 
-***First way: pip install git+https://github.com/YongLiuLab/R2SN_construction."*** or you also can download this package and ***cd the workdir to ../R2SN_construction*** and then ***pip install .***
-
+***First way: pip install git+https://github.com/YongLiuLab/R2SN_construction."*** or you also can download this package and ***cd the workdir to ../R2SN_construction*** and then ***“pip install .”*** 
 ***Second way: pip install R2SN==1.0.4***
 
 ## Example

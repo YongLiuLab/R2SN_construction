@@ -14,6 +14,8 @@ Python>=3.8
 If you used R2SN_code, please refer this orignal paper.
 [Original Paper](https://direct.mit.edu/netn/article/5/3/783/101835/Regional-radiomics-similarity-networks-R2SNs-in)
 
+Zhao K, Zheng Q, Che T, et al. Regional radiomics similarity networks (R2SNs) in the human brain: Reproducibility, small-world properties and a biological basis [J]. Network Neuroscience, 2021, 1-15.
+
 ## Installation
 This package can support two systems, you can choose the system followed your computer as "system==Windows" or "system==linux". Here, if you choose ***"system==Windows"*** , you should download the [ANTs windows](https://github.com/ANTsX/ANTs/releases). Otherwise, the [ANTspy](https://github.com/ANTsX/ANTsPy) code is needed if you choose ***"system=linux"***. The author suggest the ubuntu revison first.
 

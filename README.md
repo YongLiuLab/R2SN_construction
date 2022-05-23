@@ -23,9 +23,9 @@ There are two ways to install the R2SN_code.
 from R2SN import feature_extraction  
 
 
-    Image_path = r'D:\Python_project\venv\Brain\R2SN\R2SN\data\Image' #input image path  
-    Network_output_path = r'D:\Python_project\venv\Brain\R2SN\R2SN\data\Network' #output network path  
-    feature_extraction.R2SN_feature_extract(Image_path = Image_path,  
+Image_path = r'D:\Python_project\venv\Brain\R2SN\R2SN\data\Image' #input image path  
+Network_output_path = r'D:\Python_project\venv\Brain\R2SN\R2SN\data\Network' #output network path  
+feature_extraction.R2SN_feature_extract(Image_path = Image_path,  
                                             Network_output_path = Network_output_path,  
                                             system = 'Windows', #Linux  
                                             n_jobs = 1)  

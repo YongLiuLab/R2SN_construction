@@ -31,6 +31,6 @@ feature_extraction.R2SN_feature_extract(Image_path = Image_path,
                                             n_jobs = 1)  
 
 ## Note
-You may meet some errors in using this package, like...
+Here, the image_path is the ***dir*** of your original file. The Network_out_path is the ***dir*** of your choosed ouput dir. Moreover, the system="Windows" or system="Linunx". n_jobs is means how much works runing at the same time, maybe you can use n_jobs=4 in your PC and n_jobs=8 in your more power computer.
 
 ***1.*** 

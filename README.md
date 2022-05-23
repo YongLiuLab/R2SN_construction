@@ -33,4 +33,6 @@ feature_extraction.R2SN_feature_extract(Image_path = Image_path,
 ## Note
 Here, the image_path is the ***dir*** of your original file. The Network_out_path is the ***dir*** of your choosed ouput dir. Moreover, the system="Windows" or system="Linunx". n_jobs is means how much works runing at the same time, maybe you can use n_jobs=4 in your PC and n_jobs=8 in your more power computer.
 
-***1.*** 
+Following aspects should be noted in your study
+
+***1.*** We suggest that you can run this package in python>=3.8. else, maybe the requirment should be changed when installing R2SN packcage, such as change the "scipy==1.6.2" to "scipy>=1.5.4". But maybe some error would appear.

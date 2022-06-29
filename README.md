@@ -1,6 +1,6 @@
 # R2SN_construction
 
-![IMG.jpg] (https://github.com/YongLiuLab/R2SN_construction/IMG.jpg)
+![IMG.jpg](https://github.com/YongLiuLab/R2SN_construction/IMG.jpg)
 
 R2SNs provide a novel, reliable and biologically plausible method to understand human morphological covariance based on sMRI.
 

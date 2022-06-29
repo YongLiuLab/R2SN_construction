@@ -15,7 +15,7 @@ import time
 
 def network_per(args):
     Image_path, Image_file, Network_output_path, Target_path, \
-    Image_output_path, Mask_path, temp_path, \
+    Image_output_path, Mask_path, num_atlas, temp_path, \
     params_path, radiomics_output_path, picked_feature_path, \
     Image_output, radiomics_output,system = args
 
@@ -34,7 +34,7 @@ def network_per(args):
     print(f'Image: {Image_file} preprocessing finished, cost time{t1 - t0}.')
 
     # Feature_extraction
-    Input_csv = make_csv(Image_output_path, Image_regis, Mask_path, temp_path)  # csv_file_name
+    Input_csv = make_csv(Image_output_path, Image_regis, Mask_path, num_atlas, temp_path)  # csv_file_name
     t2 = time.time()
     print(f'Image: {Image_file} feature extraction start!')
     feature_extract_file = feature_extract(os.path.join(temp_path, Input_csv), params_path,
@@ -110,6 +110,7 @@ def network(Image_path,#xxx/xxx/
         Image_output = False
         Image_output_path = temp_path
     else:
+        Image_output = True
         if not os.path.exists(Image_output_path):
             raise Exception(f"Error: Image_output_path invalid")
 
@@ -117,6 +118,7 @@ def network(Image_path,#xxx/xxx/
         radiomics_output = False
         radiomics_output_path = temp_path
     else:
+        radiomics_output = True
         if not os.path.exists(radiomics_output_path):
             raise Exception(f"Error: radiomics_output_path invalid")
 
@@ -124,10 +126,13 @@ def network(Image_path,#xxx/xxx/
     if not os.path.exists(temp_path):
         os.mkdir(temp_path)
 
+    Mask = nib.load(Mask_path)
+    Mask_data = Mask.get_fdata()
+    num_atlas = len(np.unique(Mask_data)) - 1
     Image_list = sort_humanly([f for f in os.listdir(Image_path) if '.nii' or '.nii.gz' in f])
     pool = Pool(n_jobs)
     pool.map(network_per, [(Image_path, f, Network_output_path,Target_path,
-                            Image_output_path, Mask_path, temp_path,
+                            Image_output_path, Mask_path, num_atlas, temp_path,
                             params_path, radiomics_output_path, picked_feature_path,
                             Image_output, radiomics_output, system) for f in Image_list])
     shutil.rmtree(temp_path)

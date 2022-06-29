@@ -17,7 +17,7 @@ def network_compute(feature_csv,file_name,output_path, picked_feature_path, csv_
     network = np.zeros([num_region,num_region])
     for i in range(num_region):
         for j in range(i,num_region):
-            network[i,j] = pearsonr(normalize_featrue[i,:],normalize_featrue[j,:])[0]
+            network[i,j] = np.corrcoef(normalize_featrue[i,:],normalize_featrue[j,:])[0,1]
     for i in range(1,num_region):
         for j in range(0,i):
             network[i,j] = network[j,i]

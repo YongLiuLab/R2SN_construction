@@ -10,7 +10,7 @@ with open('requirements.txt', 'r') as f:
 
 setup(
     name="R2SN",  # 自定义工具包的名字
-    version="1.0.4",  # 版本号
+    version="1.1.1",  # 版本号
     author="YangFan",  # 作者名字
     author_email="2669742207@qq.com",  # 作者邮箱
     description="description",  # 自定义工具包的简介

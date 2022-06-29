@@ -78,22 +78,23 @@ def feature_extract(csv_path, params_path, radiomics_ouput_path):
   for idx, entry in enumerate(flists, start=1):
 
     # logger.info("(%d/%d) Processing Patient (Image: %s, Mask: %s)", idx, len(flists), entry['Image'], entry['Mask'])
-    print("({num1}/{num2}) Processing Patient (Image: {str1}, Mask: {str2})".format(num1 = idx, num2 = len(flists),
-                                                                                    str1 = entry['Image'], str2 = entry['Mask']))
+    print("({num1}/{num2}) Processing Patient (Image: {str1}, Mask: {str2}, Label: {str3})".format(num1 = idx, num2 = len(flists),
+                                                                                    str1 = entry['Image'],
+                                                                                    str2 = entry['Mask'] ,
+                                                                                    str3 = entry['Label']))
     imageFilepath = entry['Image']
     maskFilepath = entry['Mask']
-    label = entry.get('Label', None)
+    label = entry['Label']
 
     if str(label).isdigit():
       label = int(label)
     else:
       label = None
 
-    if (imageFilepath is not None) and (maskFilepath is not None):
+    if (imageFilepath is not None) and (maskFilepath is not None) and (label is not None):
       featureVector = collections.OrderedDict(entry)
       featureVector['Image'] = os.path.basename(imageFilepath)
       featureVector['Mask'] = os.path.basename(maskFilepath)
-
 
       try:
         featureVector.update(extractor.execute(imageFilepath, maskFilepath, label))

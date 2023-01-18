@@ -135,6 +135,7 @@ def network(Image_path,#xxx/xxx/
                             Image_output_path, Mask_path, num_atlas, temp_path,
                             params_path, radiomics_output_path, picked_feature_path,
                             Image_output, radiomics_output, system) for f in Image_list])
+    pool.close()
     shutil.rmtree(temp_path)
 
     # for i in range(len(Image_list)):
